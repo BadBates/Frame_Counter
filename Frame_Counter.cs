@@ -14,7 +14,12 @@ public class Frame_Counter : MonoBehaviour
 
     public void OnGUI()
     {
-        float fps = 1 / Time.deltaTime;
+        //float fps = 1 / Time.deltaTime;
+
+        int fps = 1 / 24;
+
+        fps / Time.deltaTime;
+
         GUI.Label(fpsRect, "FPS:" + string.Format("{0:0}", fps), style);
     }
 }
